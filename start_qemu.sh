@@ -57,7 +57,5 @@ fi
 # to your binary "qemu-system-arm". The commneted example below assumes you
 # have "installed" it to your home directory under ~/qemu.
 
-QEMUBIN=qemu-system-arm
-#QEMUBIN=~/qemu/bin/qemu-system-arm
-
-$QEMUBIN -M versatilepb -nographic -m 128 -kernel $IMAGE_FILE $QEMU_GDB_ARG
+QEMUBIN=$PWD/qemu-system-arm
+$QEMUBIN  -machine versatilepb -cpu cortex-r5  -nographic -m 128 -kernel $IMAGE_FILE $QEMU_GDB_ARG

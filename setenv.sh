@@ -29,7 +29,8 @@
 # of IA32 GNU/Linux TAR and manually unpacked it into /opt, so all paths 
 # will be relative to this one:
 
-TOOLCHAIN=/opt/arm-2014.05
+#downloaded from https://launchpad.net/gcc-arm-embedded/4.8/4.8-2014-q3-update/+download/gcc-arm-none-eabi-4_8-2014q3-20140805-linux.tar.bz2
+TOOLCHAIN=/opt/gcc-arm-none-eabi-4_8-2014q3
 
 # Add a path to gnu-none-eabi-* executables:
 export PATH=$PATH:$TOOLCHAIN/bin

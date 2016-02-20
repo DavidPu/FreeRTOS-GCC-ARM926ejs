@@ -1,0 +1,7 @@
+sudo apt-get build-dep qemu qemu-system qemu-system-arm
+git clone git://git.qemu-project.org/qemu.git
+cd qemu
+
+./configure --static  --target-list=arm-softmmu,arm-linux-user --disable-vnc --disable-vnc-jpeg --disable-vnc-png --disable-libusb  --disable-gtk --disable-sdl --disable-cap-ng --disable-vhost-net --disable-vhdx --disable-usb-redir  --disable-seccomp --audio-drv-list=""
+
+make -j10

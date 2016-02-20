@@ -34,7 +34,8 @@ AR = $(TOOLCHAIN)ar
 CFLAG = -c
 OFLAG = -o
 INCLUDEFLAG = -I
-CPUFLAG = -mcpu=arm926ej-s
+#CPUFLAG = -mcpu=arm926ej-s
+CPUFLAG = -mcpu=cortex-r5 -mthumb-interwork
 WFLAG = -Wall -Wextra -Werror
 CFLAGS = $(CPUFLAG) $(WFLAG)
 

@@ -56,7 +56,7 @@ SECTIONS
     __ld_Init_Addr = 0x10000;     /* Qemu starts execution at this address */
     __ld_Svc_Stack_Size = 0x1000; /* Very generous size of the Supervisor mode's stack (4 kB) */
     __ld_Irq_Stack_size = 0x1000; /* Very generous size of the IRQ mode's stack (4 kB) */
-    __ld_Ram_size = 128M;         /* Total capacity of RAM */
+    __ld_Ram_size = 256K;         /* Total capacity of RAM */
 
 
     . = __ld_Vectors_Size;        /* Move the pointer after the "reserved" area for exception vectors */
